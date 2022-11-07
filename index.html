@@ -2,8 +2,8 @@
 layout: home
 ---
 <div class="user-details">
-<h2> Me and this website </h2>
-<p style="text-align: justify;"> Your description </p>
+<h2> 个人简介 </h2>
+<p style="text-align: justify;"> 本页面是为了完成网站规划结课作业专用页面，隶属于个人博客 </p>
 <div class="analytics"  style="border: solid lightgrey; border-radius: 5px;">
 	<h3> Analytics </h3>
 	{% include clustrmap.html style="js" %}
@@ -11,7 +11,7 @@ layout: home
 </div>
 </div>
 <div class="permlinks">
-<h2>Recent Posts</h2>
+<h2>个人情况</h2>
 <dl>
 	{% for post in site.posts limit:3 %}
 	<dt><code>{{ post.date | date_to_string }} </code><i class="fas fa-angle-double-right" aria-hidden="true"></i><a href="{{ post.url }}">{{ post.title }}</a> &nbsp;{% include status-indicator.html status=post.status%}
@@ -23,10 +23,14 @@ layout: home
 	<p>... <a href="/blog">Full Posts List</a> </p>
 </dl>
 
-<h2>Upcoming Posts (edit me at /index.html )</h2>
+<h2></h2>
 <ul>
-	<li>Post 1</li>
-	<li>Post 2</li>
+	<li>学校：华北水利水电大学</li>
+	<li>学院：信息工程学院</li>
+	<li>专业：软件工程</li>
+	<li>班级：2019174班</li>
+	<li>学号：201917403</li>
+	<li>姓名：王云龙</li>
 </ul>
 
 </div >
